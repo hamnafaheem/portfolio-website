@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li class="name">Hamna Faheem Siddiqui</li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="about">
+      <h1>About Me</h1>
+      <div class="container-card-1">
+      <p>Hi, I'm a UI/UX designer</p>
+      <p>
+        Proactive and hardworking personality recently doing a Bachelor's in
+        software engineering from UBIT. I am looking for an environment that
+        offers a great challenge, to further experience the depth of
+        technologies, and want to impact the organization for its growth with my
+        technical and leading skills.
+      </p>
+      <h2>Contact Me</h2>
+      <p>
+    Email:
+    <a href="mailto:your-email@example.com" class="email-link">hamnafaheem50@gmail.com</a>
+</p>
+
+      <p>Phone: +92-335-0285260</p>
+    </section>
+
+    <section id="projects">
+      <h1>Projects</h1>
+      <div class="projects-container">
+        <div class="project-card">
+          <img src="./images/signin signup.png" alt="Signin Signup" />
+          <div class="project-info">
+            <h2>Signin Signup</h2>
+            <p>
+              Project description:- This project features a modern
+              authentication interface, including both sign-in and sign-up
+              screens. It emphasizes user-friendly design with clear
+              call-to-action buttons, form validations, and responsive layouts
+              to ensure a smooth user experience across devices
+            </p>
+            <button class="quick-view">Quick View</button>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="./images/profiles.png" alt="Profiles" />
+          <div class="project-info">
+            <h2>Profiles</h2>
+            <p>
+              Project description:- The Profiles project showcases a user
+              profile management system. It includes editable user profiles,
+              profile pictures, and customizable settings. The design focuses on
+              ease of use, accessibility, and aesthetic presentation of user
+              information.
+            </p>
+            <button class="quick-view">Quick View</button>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="./images/artposter.png" alt="Art Poster" />
+          <div class="project-info">
+            <h2>Art Poster</h2>
+            <p>
+              Project description:- This project involves creating a visually
+              appealing art poster. The design highlights creative typography
+              and graphic elements, showcasing the poster's ability to captivate
+              and communicate messages effectively in various artistic styles.
+            </p>
+            <button class="quick-view">Quick View</button>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="./images/businesscard.png" alt="Business Card" />
+          <div class="project-info">
+            <h2>Business Card</h2>
+            <p>
+              Project description:- The Business Card project provides a sleek
+              and professional design for business cards. It includes essential
+              contact information and branding elements, emphasizing a clean
+              layout and high-quality print design to make a lasting impression.
+            </p>
+            <button class="quick-view">Quick View</button>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="./images/Dashboard.png" alt="Dashboard" />
+          <div class="project-info">
+            <h2>Dashboard</h2>
+            <p>
+              Project description:- The Dashboard project features an
+              interactive data visualization dashboard. It integrates various
+              widgets and charts to display key performance metrics and data
+              insights, designed for real-time analysis and user-friendly
+              interaction.
+            </p>
+            <button class="quick-view">Quick View</button>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="./images/newsletter.png" alt="Newsletter" />
+          <div class="project-info">
+            <h2>Newsletter</h2>
+            <p>
+              Project description:- This project focuses on the design of a
+              subscription-based newsletter. It includes an engaging layout for
+              content delivery, subscription forms, and customization options,
+              aiming to enhance reader engagement and streamline communication.
+            </p>
+            <button class="quick-view">Quick View</button>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="./images/Samama & Co..png" alt="Samama & Co." />
+          <div class="project-info">
+            <h2>Samama & Co.</h2>
+            <p>
+              Project description:- The Samama & Co. project presents a brand
+              identity design for a company. It includes logo design, branding
+              materials, and a cohesive visual style that reflects the company's
+              values and market positioning, aiming for a professional and
+              memorable brand presence.
+            </p>
+            <button class="quick-view">Quick View</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+        <div class="container-card-2">
+      <h1>Skills</h1>
+       <div class="skills-container">
+        <div class="skill">User Research and Analysis</div>
+        <div class="skill">Wireframing and Prototyping</div>
+        <div class="skill">Figma</div>
+        <div class="skill">Component Design and Design Systems</div>
+        <div class="skill">Responsive Design</div>
+    </div>
+    </section>
+
+    <section id="resume">
+        <div class="container-card-3">
+      <h1>Resume</h1>
+      <a href="./resume/_HamnaFaheem-UI_UX designing.pdf" target="_blank"
+        >Download my resume</a
+      >
+    </section>
+
+    <section id="contact">
+        <div class="container-card-4">
+      <h1>Contact</h1>
+      <form>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required />
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
+        <label for="message">Message</label>
+        <textarea id="message" name="message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

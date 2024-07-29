@@ -1,0 +1,300 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    color: #333;
+    overflow-x: hidden;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.name {
+    font-size: 1.0rem;
+    font-weight: bold;
+    margin-right: auto;
+    color: #fff;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+     align-items: center;
+}
+
+nav ul li {
+    margin: 0 1.3rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #f6d365;
+}
+.email-link {
+    color: #fda085; /* Set your desired color */
+    text-decoration: none; /* Remove underline */
+}
+
+.email-link:hover {
+    color: #f6d365; /* Change color on hover */
+    text-decoration: underline; /* Optional: underline on hover */
+}
+
+
+section {
+    padding: 4rem 1rem;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+     background: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    color: #fcf9f9;
+}
+
+section h1 {
+    margin-bottom: 2rem;
+    font-size: 2.3rem;
+    animation: fadeIn 1s ease-in-out;
+}
+
+section p, section ul, section a, section form {
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.container-card-1 {
+    background: #2c1e13;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    margin: 1rem;
+    max-width: 600px;
+    width: 100%;
+    animation: slideUp 0.8s ease-in-out;
+}
+.container-card-2 {
+    background: #2c1e13;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    margin: 1rem;
+    max-width: 400px;
+    width: 100%;
+    animation: slideUp 0.8s ease-in-out;
+}
+.container-card-3 {
+    background: #fda085;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    margin: 1rem;
+    max-width: 600px;
+    width: 100%;
+    animation: slideUp 0.8s ease-in-out;
+}
+.skills-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap to the next line if there's not enough space */
+    gap: 1rem; /* Adjust spacing between items */
+    justify-content: center; /* Center items horizontally */
+}
+
+.skill {
+    background: #fda085;
+    color: #333; /* Text color for better readability */
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 0.5rem;
+}
+
+.container-card-4 {
+    background: #2c1e13;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    margin: 1rem;
+    max-width: 400px;
+    width: 100%;
+    animation: slideUp 0.8s ease-in-out;
+}
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.project-card {
+    background: #6a1e09;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: 1rem;
+    flex: 1 1 calc(33% - 2rem); /* 3 cards per row with spacing */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease;
+    height: 450px;
+     /* Adjust as needed */
+     width: 400px;
+    position: relative;
+}
+
+.project-card img {
+    width: 100%;
+     height: 200px; /* Fixed height for consistent card size */
+    object-fit: cover; /* Ensures images cover the area */
+    display: block;
+}
+
+.project-info {
+    padding: 1rem;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.project-card h2 {
+    margin: 0.5rem 0;
+}
+
+.project-card p {
+    margin: 0.5rem 0;
+}
+
+.project-card .quick-view {
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    background: #fda085;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.project-card .quick-view:hover {
+    background: #f6d365;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+}
+
+form label {
+    margin-top: 1rem;
+}
+
+form input, form textarea {
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+form button {
+    margin-top: 1rem;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 5px;
+    background: #fda085;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+form button:hover {
+    background: #f6d365;
+}
+
+/* Modal styles */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    position: relative;
+    background: #fff;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 90%;
+    max-height: 90%;
+    overflow: auto;
+}
+
+.modal-content img {
+    width: 100%;
+    height: auto;
+    max-height: 80vh;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: #333;
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
